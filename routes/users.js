@@ -4,7 +4,6 @@ const User = require('../models/User');
 const Post = require('../models/Post');
 
 // Update user
-
 router.put('/:id', async (req, res) => {
   if (req.body.userId === req.params.id) {
     if (req.body.password) {
@@ -29,7 +28,6 @@ router.put('/:id', async (req, res) => {
 });
 
 // Delete user
-
 router.delete('/:id', async (req, res) => {
   if (req.body.userId === req.params.id) {
     try {
@@ -47,6 +45,17 @@ router.delete('/:id', async (req, res) => {
     }
   } else {
     res.status(401).json('You can delete only your account');
+  }
+});
+
+//Get a particular user
+router.get('/:id', async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id);
+    const { password, ...otherCredentials } = user._doc;
+    res.status(200).json(otherCredentials);
+  } catch (error) {
+    res.status(500).json(err);
   }
 });
 
