@@ -1,0 +1,219 @@
+
+
+GET http://localhost:4000/api/users/618b835d29cba06a0f531385
+
+###################################################
+
+
+// Register a new user
+POST http://localhost:4000/api/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Alex",
+    "email": "alexnick2003@mail.com",
+    "password": "Ronbbmss1985d"
+}
+
+###################################################
+
+// Login with an existing user
+POST http://localhost:4000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Alex",
+    "password": "Ronbbmss1985"
+
+}
+
+###################################################
+
+// Update a particular user with an ID
+PUT http://localhost:4000/api/users/618b835d29cba06a0f531385 HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "618b835d29cba06a0f531385",
+    "username": "AlexUpdated",
+    "email": "stx.webdev@gmail.com",
+    "password": "Ronbbmss1985"
+}
+
+###################################################
+
+// Delete a user
+DELETE http://localhost:4000/api/users/618b835d29cba06a0f531385 HTTP/1.1
+
+{   "username": "Alex",
+    "userId": "618b835d29cba06a0f531385",
+    "password": "Ronbbmss1985"
+}
+
+###################################################
+
+
+
+// Create a Post
+POST http://localhost:4000/api/posts/
+
+{
+    "username": "Alex",
+    "title": "test title",
+    "desctiption": "test description"
+
+}
+
+###################################################
+
+
+// Update a particular Post with an Id
+PUT http://localhost:4000/api/posts/618b8651cd42d79f5a13cf9c
+
+{
+    "username": "Alex",
+    "title": "test title",
+    "desctiption": "test description"
+
+}
+
+###################################################
+
+
+GET http://localhost:4000/api/users/618b835d29cba06a0f531385
+
+###################################################
+
+
+// Register a new user
+POST http://localhost:4000/api/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Alex",
+    "email": "alexnick2003@mail.com",
+    "password": "Ronbbmss1985d"
+}
+
+###################################################
+
+// Login with an existing user
+POST http://localhost:4000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Alex",
+    "password": "Ronbbmss1985"
+
+}
+
+###################################################
+
+// Update a particular user with an ID
+PUT http://localhost:4000/api/users/618b835d29cba06a0f531385 HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "618b835d29cba06a0f531385",
+    "username": "AlexUpdated",
+    "email": "stx.webdev@gmail.com",
+    "password": "Ronbbmss1985"
+}
+
+###################################################
+
+// Delete a user
+DELETE http://localhost:4000/api/users/618b835d29cba06a0f531385 HTTP/1.1
+
+{   "username": "Alex",
+    "userId": "618b835d29cba06a0f531385",
+    "password": "Ronbbmss1985"
+}
+
+###################################################
+
+
+
+// Create a Post
+POST http://localhost:4000/api/posts/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Alex3",
+    "title": "test title3",
+    "description": "test description3"
+
+}
+
+###################################################
+
+
+// Update a particular Post with an Id
+PUT http://localhost:4000/api/posts/618b8651cd42d79f5a13cf9c
+
+{
+    "username": "Alex",
+    "title": "test title",
+    "desctiption": "test description"
+
+}
+
+###################################################
+
+// Delete a particular Post with an Id
+DELETE http://localhost:4000/api/posts/618c1174ea7ada13269c0fdf HTTP/1.1
+
+{
+    "username": "Alex",
+    "title": "test title 2",
+    "description": "test desciption 2"
+
+}
+
+###################################################
+
+
+// Get a single Post with an Id
+GET http://localhost:4000/api/posts/618c181d02cd7a1154de2b65 HTTP/1.1
+
+{
+    "username": "Alex",
+    "title": "test title",
+    "description": "test desciption"
+
+}
+
+###################################################
+
+
+// Get all Posts
+GET http://localhost:4000/api/posts/ HTTP/1.1
+
+{
+    "username": "Alex",
+    "title": "test title",
+    "description": "test desciption"
+
+}
+
+###################################################
+
+// Create a new category
+POST http://localhost:4000/api/categories HTTP/1.1
+content-type: application/json
+
+{
+    "name": "web development"
+
+
+}
+
+###################################################
+
+
+// Get all categories
+GET http://localhost:4000/api/categories HTTP/1.1
+content-type: application/json
+
+
+###################################################
